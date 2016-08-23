@@ -1,3 +1,5 @@
+require 'faker'
+
 class Item
   def initialize(input_item_hash)
     @sport = input_item_hash[:sport]
@@ -25,3 +27,5 @@ third_item = Item.new({sport: 'football', size: 'peewee', cost: 20})
 puts first_item.sport
 puts first_item.size
 puts first_item.cost
+
+100.times do Faker::Name.name
