@@ -9,6 +9,8 @@ class Item
 end  
 
 class Food < Item
+  attr_reader :shelf_life
+  
   def initialize(input_item_hash)
     super(input_item_hash)
     @shelf_life = input_item_hash[:shelf_life]
