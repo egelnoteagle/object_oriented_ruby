@@ -18,10 +18,10 @@ class Item
   end  
 end  
 
-class Food < Items
+class Food < Item
 
-  def initialize(item_item_hash)
-    super(item_attribute_hash)
+  def initialize(input_item_hash)
+    super(input_item_hash)
     @shelf_life = item_attribute_hash[:shelf_life]
   end
 
@@ -34,4 +34,5 @@ third_item = Item.new({sport: 'football', size: 'peewee', cost: 20})
 puts first_item.sport
 puts first_item.size
 puts first_item.cost
+
 
