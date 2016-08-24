@@ -18,6 +18,15 @@ class Item
   end  
 end  
 
+class Food < Items
+
+  def initialize(item_item_hash)
+    super(item_attribute_hash)
+    @shelf_life = item_attribute_hash[:shelf_life]
+  end
+
+end
+
 first_item = Item.new({sport: 'soccer', size: '15', cost: 10})
 second_item = Item.new({sport: 'basketball', size: 'female', cost: 15})
 third_item = Item.new({sport: 'football', size: 'peewee', cost: 20})
