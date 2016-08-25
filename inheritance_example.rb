@@ -1,5 +1,4 @@
 class Navigate
-
   def initialize
     @speed = 0
     @direction = 'north'
@@ -16,11 +15,9 @@ class Navigate
   def turn(new_direction)
     @direction = new_direction
   end
-
 end
 
 class Car < Navigate
-
   def initialize
     super
     @gas = 10
@@ -32,11 +29,9 @@ class Car < Navigate
   def honk_horn
     puts "Beeeeeeep!"
   end
-
 end
 
 class Bike < Navigate
-
   def initialize
     super
     @human = true
@@ -44,7 +39,6 @@ class Bike < Navigate
     @type = "Hybrid"
     @weight = 30
   end
-
 
   def ring_bell
     puts "Ring ring!"
