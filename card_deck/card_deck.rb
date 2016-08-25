@@ -1,5 +1,5 @@
-# 1. Write out the Card and Deck classes to make the program work. The Deck class should hold a list of Card instances.
-# 2. Change the program to use multiple choice questions. The Card class should be responsible for checking the answer.
+1. Write out the Card and Deck classes to make the program work. The Deck class should hold a list of Card instances.
+2. Change the program to use multiple choice questions. The Card class should be responsible for checking the answer.
 # 3. CHALLENGE: Change the program to allow the user to retry once if they get the wrong answer.
 # 4. CHALLENGE: Change the program to keep track of number right/wrong and give a score at the end.
 # 5. CHALLENGE: Change the program to give the user the choice at the end of the game to retry the cards they got wrong.
@@ -7,13 +7,6 @@
 
 
 
-
-
-trivia_data = {
-  "What is the capital of Illinois?" => "Springfield",
-  "Is Africa a country or a continent?" => "Continent",
-  "Tug of war was once an Olympic event. True or false?" => "True"
-}
 
 deck = Deck.new(trivia_data) # deck is an instance of the Deck class
 

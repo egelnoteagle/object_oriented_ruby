@@ -1,7 +1,7 @@
 class Deck
   attr_accessor :deck
 
-  def initialize 
+  def initialize() 
 
   end  
 end
